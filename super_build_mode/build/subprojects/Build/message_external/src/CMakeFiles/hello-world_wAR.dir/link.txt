@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/hello-world_wAR.dir/hello-world.cpp.o  -o ../bin/hello-world_wAR  ../lib/libmessage_sd.a /usr/lib/x86_64-linux-gnu/libuuid.so 

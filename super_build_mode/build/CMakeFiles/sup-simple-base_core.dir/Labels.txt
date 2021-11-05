@@ -1,0 +1,13 @@
+# Target labels
+ sup-simple-base_core
+# Source files and their labels
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core-complete.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-install.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-mkdir.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-download.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-update.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-patch.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-configure.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-build.rule

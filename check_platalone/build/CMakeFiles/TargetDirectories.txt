@@ -1,0 +1,7 @@
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/source/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/source/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/source/CMakeFiles/cleanup.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/source/CMakeFiles/hash.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_platalone/build/source/CMakeFiles/generator.dir

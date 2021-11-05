@@ -1,0 +1,28 @@
+# message(STATUS "Src: CMAKE_SOURCE_DIR = ${CMAKE_SOURCE_DIR}")
+# message(STATUS "Src: CMAKE_BINARY_DIR = ${CMAKE_BINARY_DIR}")
+# message(STATUS "Src: CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
+# message(STATUS "Src: CMAKE_CURRENT_BINARY_DIR = ${CMAKE_CURRENT_BINARY_DIR}")
+# message(STATUS "Child (before): myVar = ${myVar}")
+# message(STATUS "Child (before): childVar = ${childVar}")
+
+# set(myVar bar)
+# set(childVar fuzz)
+# set(myVar bar PARENT_SCOPE)
+# set(localVar bar)
+# set(myVar ${localVar} PARENT_SCOPE)
+
+# message(STATUS "Child (after): myVar = ${myVar}")
+# message(STATUS "Child (after): childVar = ${childVar}")
+
+if("Hi from ${who}" MATCHES "Hi from (NeverGiu|Barney).*")
+	message(STATUS "${CMAKE_MATCH_1} says hello")
+else()
+	message(STATUS "Message: building shut down.")
+	return()
+endif()
+
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "CMAKE_CURRENT_BINARY_DIR = ${CMAKE_CURRENT_BINARY_DIR}")
+message(STATUS "CMAKE_CURRENT_LIST_DIR = ${CMAKE_CURRENT_LIST_DIR}")
+message(STATUS "CMAKE_CURRENT_LIST_FILE = ${CMAKE_CURRENT_LIST_FILE}")
+message(STATUS "CMAKE_CURRENT_LIST_LINE = ${CMAKE_CURRENT_LIST_LINE}")

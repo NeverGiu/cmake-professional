@@ -1,0 +1,4 @@
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_version_ctrl/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_version_ctrl/CMakeFiles/app.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_version_ctrl/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_version_ctrl/CMakeFiles/foobar.dir

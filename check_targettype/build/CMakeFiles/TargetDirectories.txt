@@ -1,0 +1,6 @@
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_targettype/build/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_targettype/build/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_targettype/build/source/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_targettype/build/source/CMakeFiles/tartype.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_targettype/build/source/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/check_targettype/build/source/CMakeFiles/test.dir

@@ -1,0 +1,5 @@
+# ninja log v5
+0	157	1634566004743922895	source/CMakeFiles/tartype.dir/tar.cpp.o	e9b2f65531ac0816
+0	158	1634566004743922895	source/CMakeFiles/test.dir/test.cpp.o	1ffabc716f24de0
+158	201	1634566004791920711	source/libtartype.so	895f12ad63d3822d
+201	234	1634566004823919255	source/test	bae9fe494470ec1e

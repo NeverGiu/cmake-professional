@@ -1,0 +1,5 @@
+# ninja log v5
+0	210	1634525303713697385	src/CMakeFiles/myApp.dir/main.cpp.o	72bb115bc4df63da
+0	211	1634525303713697385	src/CMakeFiles/myLib.dir/lib.cpp.o	afd53d6a8e863a6f
+211	240	1634525303741696973	src/libmyLib.so	d5a07a4260a42c4b
+240	273	1634525303773696502	src/myApp	ef54ca21f6817f84

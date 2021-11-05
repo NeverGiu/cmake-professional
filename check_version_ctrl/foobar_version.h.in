@@ -1,0 +1,26 @@
+#include <string>
+
+inline std::string getFooBarGitHash()
+{
+	return "@FooBar_GIT_HASH@";
+}
+inline unsigned getFooBarCommitsSinceVersionChange()
+{
+	return @FooBar_COMMITS_SINCE_VERSION_CHANGE@;
+}
+// inline unsigned getFooBarVersionMajor()
+// {
+//         return @FooBar_VERSION_MAJOR@;
+// }
+// inline unsigned getFooBarVersionMinor()
+// {
+//         return @FooBar_VERSION_MINOR@ + 0;
+// }
+// inline unsigned getFooBarVersionPatch()
+// {
+//         return @FooBar_VERSION_PATCH@ + 0;
+// }
+// inline unsigned getFooBarVersionTweak()
+// {
+//         return @FooBar_VERSION_TWEAK@ + 0;
+// }

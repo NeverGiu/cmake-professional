@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/stage/include/message/Message.hpp
+iosfwd
+-
+string
+-
+messageExport.h
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/stage/include/message/messageExport.h
+
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/stage/include/message/messageExport.h
+
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/src/use_message.cpp
+cstdlib
+-
+iostream
+-
+message/Message.hpp
+-
+

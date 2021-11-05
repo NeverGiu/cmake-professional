@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core-complete.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-install.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-mkdir.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-download.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-update.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-patch.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-configure.rule"
+		},
+		{
+			"file" : "/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/sup-simple-base_core/sup-simple-base_core-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sup-simple-base_core"
+		],
+		"name" : "sup-simple-base_core"
+	}
+}

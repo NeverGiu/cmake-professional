@@ -1,0 +1,8 @@
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/CMakeFiles/sup-simple-base_core.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/message/CMakeFiles/rebuild_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/message/CMakeFiles/edit_cache.dir
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/message/CMakeFiles/message_external.dir

@@ -1,0 +1,6 @@
+CMake version: ${CMAKE_VERSION}
+Substitution works inside quotes too: "${FOO}"
+No substitution without the $ and {}: FOO
+Empty ${} specifier gets removed
+Escaping has no effect: \${FOO}
+@-syntax also supported: @FOO@

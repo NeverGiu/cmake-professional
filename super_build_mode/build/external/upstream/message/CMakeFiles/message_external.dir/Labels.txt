@@ -1,0 +1,14 @@
+# Target labels
+ message_external
+# Source files and their labels
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/message/CMakeFiles/message_external
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/message/CMakeFiles/message_external.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/external/upstream/message/CMakeFiles/message_external-complete.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-install.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-mkdir.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-download.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-update.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-patch.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-configure.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-build.rule
+/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Stamp/message_external/message_external-test.rule

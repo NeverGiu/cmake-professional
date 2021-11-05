@@ -1,0 +1,8 @@
+#!/bin/sh
+# filename: whoami.sh.in
+readonly rootDir=`pwd`
+readonly binDir="$rootDir/bin"
+
+echo ${USER} > "$binDir/@USER_FILE@"
+
+exit 0

@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/stage;-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_CXX_STANDARD=11;-DCMAKE_CXX_EXTENSIONS=OFF;-DCMAKE_CXX_STANDARD_REQUIRED=ON;-GUnix Makefiles;-C<TMP_DIR>/message_external-cache-$<CONFIG>.cmake;<SOURCE_DIR><SOURCE_SUBDIR>'

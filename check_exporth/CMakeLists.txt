@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+project(exporth VERSION 1.0.1 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Hide things by default
+set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(CMAKE_VISIBILITY_INLINES_HIDDEN YES)
+
+add_subdirectory(source)
