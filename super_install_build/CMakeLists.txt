@@ -3,10 +3,11 @@
 # --------------------- #
 
 # Step 1: Declare cmake version and config project's settings.
-cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 project(sup-install-build 
-	VERSION 1.0.0 
-	LANGUAGES CXX)
+	LANGUAGES CXX
+	VERSION 1.0.0
+	)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)

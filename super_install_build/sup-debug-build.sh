@@ -25,11 +25,8 @@ if [ -d $buildDir ] && [ -f $srcCmakePath ] && [ -f $mainCmakePath ]
 then
 	cd $buildDir
 
-	# cmake -G Ninja -D CMAKE_BUILD_TYPE=Debug ..
-	# cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ..
-	# cmake --build . --config Debug
-	cmake -G "Unix Makefiles" -D CMAKE_INSTALL_PREFIX=$HOME/Templates/sup-install
-	cmake --build. --target install
+	cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$HOME/TestApp/sup-install-build ..
+	cmake --build . --target install
 	# ctest -v
 	# ninja test -v
 	# ctest --output-on-failure -L foo --repeat-until-fail 3

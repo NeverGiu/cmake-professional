@@ -23,7 +23,7 @@ target_sources(message-shared
 # are PUBLIC to make sure all targets depends on them can inherit correctly.
 target_compile_definitions(message-shared
 	PUBLIC
-		$<$BOOL:${UUID_FOUND}>:HAVE_UUID>
+		$<$<BOOL:${UUID_FOUND}>:HAVE_UUID>
 	)
 
 target_link_libraries(message-shared
@@ -45,7 +45,7 @@ set_target_properties(message-shared
 
 # Step 5: Finally, add executable file for 'Hello, World', and linked it with library.
 add_executable(hello-world_wDSO hello-world.cpp)
-target_link_libraries(hello-workd_wDSO
+target_link_libraries(hello-world_wDSO
 	PUBLIC 
 		message-shared
 	)
@@ -61,7 +61,7 @@ file(TO_NATIVE_PATH "${_rpath}/${INSTALL_LIBDIR}" message_RPATH)
 
 # Step 7: Now we can using it to configuring executable target hello-world_wDSO's RPATH,
 # and we can also set additional attributes.
-set_target_properties(hello-workd_wDSO
+set_target_properties(hello-world_wDSO
 	PROPERTIES
 		MACOSX_RPATH ON
 		SKIP_BUILD_RPATH OFF
