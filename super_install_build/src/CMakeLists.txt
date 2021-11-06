@@ -49,3 +49,42 @@ target_link_libraries(hello-workd_wDSO
 	PUBLIC 
 		message-shared
 	)
+
+# Step 6: Config message_RPATH, this will config suitable RPATH for GNU/Linux and macOS.
+file(RELATIVE_PATH _rel ${CMAKE_INSTALL_PREFIX}/${INSTALL_BINDIR} ${CMAKE_INSTALL_PREFIX})
+if(APPLE)
+	set(_rpath "@loader_path/${_rel}")
+else()
+	set(_rpath "\$ORIGIN/${_rel}")
+endif()
+file(TO_NATIVE_PATH "${_rpath}/${INSTALL_LIBDIR}" message_RPATH)
+
+# Step 7: Now we can using it to configuring executable target hello-world_wDSO's RPATH,
+# and we can also set additional attributes.
+set_target_properties(hello-workd_wDSO
+	PROPERTIES
+		MACOSX_RPATH ON
+		SKIP_BUILD_RPATH OFF
+		BUILD_WITH_INSTALL_RPATH OFF
+		INSTALL_RPATH "${message_RPATH}"
+		INSTALL_RPATH_USE_LINK_PATH ON
+		)
+
+# Step 8: Finally, we can install libraries, headers and executable files.
+install(
+	TARGETS
+		message-shared
+		hello-world_wDSO
+	ARCHIVE
+		DESTINATION ${INSTALL_LIBDIR}
+		COMPONENT lib
+	RUNTIME
+		DESTINATION ${INSTALL_BINDIR}
+		COMPONENT bin
+	LIBRARY
+		DESTINATION ${INSTALL_LIBDIR}
+		COMPONENT lib
+	PUBLIC_HEADER
+		DESTINATION ${INSTALL_INCLUDEDIR}/message
+		COMPONENT dev
+	)
