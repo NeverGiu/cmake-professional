@@ -11,12 +11,25 @@ Step 1: Initial git-work:
 	cd xxx-project
 
 Step 2: Create tracking for items in directory 'xxx-project':
-<!-- for selected files -->
+<!-- ADD ITEMS-->
+<!-- for add selected files -->
 	git add xxx.*
 	git add *.xxx
 	...
-<!-- or directory -->
+<!-- or add selected directory -->
 	git add xxx
+<!-- or add all items -->
+	git add .
+
+<!-- REMOVE ITEMS-->
+<!-- for remove selected files -->
+	git rm xxx.*
+	git rm *.xxx
+	...
+<!-- or remove selected directory -->
+	git rm xxx
+<!-- or remove all items -->
+	git rm .
 
 Step 3: Commit the items that already been added in cache location to local repository:
 <!-- you can add some commit infomations here -->
