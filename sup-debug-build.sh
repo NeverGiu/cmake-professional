@@ -27,7 +27,7 @@ then
 
 	cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$HOME/TestApp/sup-install-build ..
 	cmake --build . --target install
-	# ctest -v
+	ctest -v
 	# ninja test -v
 	# ctest --output-on-failure -L foo --repeat-until-fail 3
 	# ctest --output-on-failure

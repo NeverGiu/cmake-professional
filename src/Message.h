@@ -3,9 +3,14 @@
 #include <iosfwd>
 #include <string>
 
+#include "messageExport.h"
+
 namespace Lib
 {
-	class Message
+	// The 'message_EXPORT' preprocessor directive is introduced in the declaration
+	// of the Message class. This directive will allow the compiler to generate
+	// symbols visible to users of the library.
+	class message_EXPORT Message
 	{
 	public:
 		Message(const std::string& m): message_(m){}
