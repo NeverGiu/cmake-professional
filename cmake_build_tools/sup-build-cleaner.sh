@@ -20,12 +20,12 @@ fi
 if [ -d $buildDir ]
 then
 	cd $buildDir
-	rm -rf *
+	rm -rf $buildDir/
 
 	if [ -f $logPath ]
 	then
 		currentTime=`date '+%F %T'`
-		echo "Files has been cleaned up($currentTime)." >> $logPath
+		echo "Builded files has been cleaned up($currentTime)." >> $logPath
 	fi
 else
 	if [ -f $logPath ]

@@ -59,7 +59,7 @@ foreach(p LIB BIN INCLUDE CMAKE)
 	file(TO_NATIVE_PATH ${CMAKE_INSTALL_PREFIX}/${INSTALL_${P}DIR} _path)
 	message(STATUS "Installing ${p} components to ${_path}")
 	unset(_path)
-endforeach(p LIB BIN INCLUDE CMAKE)
+endforeach()
 
 # Step 7: Add sub-directorys(src, tests)
 add_subdirectory(src)
@@ -67,3 +67,4 @@ add_subdirectory(src)
 enable_testing()
 
 add_subdirectory(tests)
+
