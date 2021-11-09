@@ -16,9 +16,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Step 2: Send project install message to user.
 message(STATUS "Project will be installed to ${CMAKE_INSTALL_PREFIX}")
 
-# Step 3: Config project with Debug-Mod(default case).
+# Step 3: Config project with Release-Mod(default case).
 if(NOT CMAKE_BUILD_TYPE)
-	set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+	set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
 endif()
 message(STATUS "Build type set to ${CMAKE_BUILD_TYPE}")
 
@@ -68,3 +68,4 @@ enable_testing()
 
 add_subdirectory(tests)
 
+include(CMakeCPack.cmake)

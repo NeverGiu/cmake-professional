@@ -25,9 +25,13 @@ if [ -d $buildDir ] && [ -f $srcCmakePath ] && [ -f $mainCmakePath ]
 then
 	cd $buildDir
 
-	cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$HOME/TestApp/sup-install-build ..
-	cmake --build . --target install
-	ctest -v
+	# cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$HOME/TestApp/sup-install-build ..
+	cmake -G "Unix Makefiles" ..
+	# cmake --build . --target package_source # generating source package
+	echo "--(Install Message): You can input 'cmake --build . --target [modename]' to install the project by differents way below(make sure current directory is 'build')."
+	cmake --build . --target help # generating an targets list
+	# cmake --build . --target install
+	# ctest -v
 	# ninja test -v
 	# ctest --output-on-failure -L foo --repeat-until-fail 3
 	# ctest --output-on-failure
