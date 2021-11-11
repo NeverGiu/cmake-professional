@@ -5,7 +5,7 @@ set(CPACK_PACKAGE_NAME "${PROJECT_NAME}")
 set(CPACK_PACKAGE_VENDOR "NeverGiu")
 
 # Step 3: The packaged sources contains an description file
-set(CPACK_PACKAGE_DESCRIPTION_FILE "${PROJECT_SOURCE_DIR}/INSTALL.md")
+set(CPACK_PACKAGE_DESCRIPTION_FILE "${PROJECT_SOURCE_DIR}/README.md")
 
 # Step 4: Add an description summary of the package
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "message: This is a small messaging library.")
