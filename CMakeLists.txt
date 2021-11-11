@@ -68,4 +68,5 @@ enable_testing()
 
 add_subdirectory(tests)
 
+# Step 8: CMake CPack is Required when we will packaging our project
 include(CMakeCPack.cmake)

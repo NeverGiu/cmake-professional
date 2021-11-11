@@ -1,25 +1,47 @@
 Original project(super_install_build) directory structure:
+
 .
+
 cmake
+
 ├── coffee.icns
+
 ├── Info.plist.in
+
 └── messageConfig.cmake.in
+
 CMakeCPack.cmake
+
 CMakeLists.txt
+
 INSTALL.md
+
 LICENSE
+
 log
+
 src
+
 ├── CMakeLists.txt
+
 ├── hello-world.cpp
+
 ├── Message.cpp
+
 └── Message.h
+
 sup-build-cleaner.sh
+
 sup-release-build.sh
+
 tests
+
  ├── CMakeLists.txt
+
  └── use_target
+
      ├── CMakeLists.txt
+
      └── use_message.cpp
 
 How to install the project ?

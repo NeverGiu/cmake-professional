@@ -2,6 +2,8 @@
 #     Src CMake File    #
 # --------------------- #
 
+# Import package
+# --------------
 # Step 1: The project is depends on UUID.
 find_package(PkgConfig QUIET)
 if(PKG_CONFIG_FOUND)
@@ -17,7 +19,7 @@ endif()
 # Step 2: Build a dynamic library, and specify the source file
 add_library(message-shared SHARED "")
 
-# Step 5: Include 'GenerateExportHeader.cmake' module and calling 'generate_export_header'
+# Step 3: Include 'GenerateExportHeader.cmake' module and calling 'generate_export_header'
 # funcion, this action will generating 'messageExport.h' header.
 include(GenerateExportHeader)
 generate_export_header(message-shared
@@ -31,13 +33,12 @@ generate_export_header(message-shared
 	DEFINE_NO_DEPRECATED
 	)
 
-
 target_sources(message-shared
 	PRIVATE
 		${CMAKE_CURRENT_LIST_DIR}/Message.cpp
 	)
 
-# Step 3: Declare linked library when compiling. Note: all these items 
+# Step 4: Declare linked library when compiling. Note: all these items 
 # are PUBLIC to make sure all targets depends on them can inherit correctly.
 target_compile_definitions(message-shared
 	PUBLIC
@@ -46,7 +47,7 @@ target_compile_definitions(message-shared
 		$<INSTALL_INTERFACE:USING_message>
 	)
 
-# Step 6: When we will change visibility of symbols, we should include the header 
+# Step 5: When we will change visibility of symbols, we should include the header 
 # that has been exported.
 target_include_directories(message-shared
 	PUBLIC
@@ -59,7 +60,7 @@ target_link_libraries(message-shared
 		$<$<BOOL:${UUID_FOUND}>:PkgConfig::UUID>
 	)
 
-# Step 4: Set additional attributes of the target.
+# Step 6: Set additional attributes of the target.
 set_target_properties(message-shared
 	PROPERTIES
 		POSITION_INDEPENDENT_CODE 1
@@ -113,6 +114,8 @@ set_target_properties(message-static
 		PUBLIC_HEADER "Message.h;${CMAKE_BINARY_DIR}/${INSTALL_INCLUDEDIR}/messageExport.h"
 	)
 
+# Executable file
+# ---------------
 # Step 10: Finally, add executable file for 'Hello, World', and linked it with library.
 add_executable(hello-world_wDSO hello-world.cpp)
 target_link_libraries(hello-world_wDSO
@@ -148,7 +151,9 @@ target_link_libraries(hello-world_wAR
 		message-static
 	)
 
-# Step 14: Finally, we can install libraries, headers and executable files.
+# Installation
+# ------------
+# Step 14: We can install libraries, headers and executable files.
 install(
 	TARGETS
 		message-shared
@@ -171,7 +176,7 @@ install(
 		COMPONENT dev
 	)
 
-# Step 8: Auto creational exported target file 'messageTargets.cmake',
+# Step 15: Auto creational exported target file 'messageTargets.cmake',
 # needs to explicitly specify its installation rules. It's target is 
 # 'INSTALL_CMAKEDIR'.
 install(
@@ -185,7 +190,7 @@ install(
 		dev
 	)
 
-# Step 9: Needs creating currectly CMake config file. This will make sure
+# Step 16: Needs creating currectly CMake config file. This will make sure
 # that downstream project can find the message library exported targets.
 include(CMakePackageConfigHelpers)
 
@@ -196,14 +201,14 @@ write_basic_package_version_file(
 	COMPATIBILITY SameMajorVersion
 	)
 
-# Step 10: Usage 'configure_package_config_file' function to create CMake config file.
+# Step 17: Usage 'configure_package_config_file' function to create CMake config file.
 configure_package_config_file(
 	${PROJECT_SOURCE_DIR}/cmake/messageConfig.cmake.in
 	${CMAKE_CURRENT_BINARY_DIR}/messageConfig.cmake
 	INSTALL_DESTINATION ${INSTALL_CMAKEDIR}
 	)
 
-# Step 11: Finally, sets install rules for the two auto-created configure files.
+# Step 18: Finally, sets install rules for the two auto-created configure files.
 install(
 	FILES
 		${CMAKE_CURRENT_BINARY_DIR}/messageConfig.cmake
