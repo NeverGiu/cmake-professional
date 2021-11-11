@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libmessage_d.so.1 -o ../lib/libmessage_d.so.1 CMakeFiles/message-shared.dir/Message.cpp.o  /usr/lib/x86_64-linux-gnu/libuuid.so 

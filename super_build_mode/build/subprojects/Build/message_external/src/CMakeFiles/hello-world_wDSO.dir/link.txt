@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/hello-world_wDSO.dir/hello-world.cpp.o  -o ../bin/hello-world_wDSO  -Wl,-rpath,/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Build/message_external/lib: ../lib/libmessage_d.so.1 /usr/lib/x86_64-linux-gnu/libuuid.so 

@@ -1,3 +1,0 @@
-repository='https://github.com.cnpmjs.org/dev-cafe/message.git'
-module=''
-tag='origin'

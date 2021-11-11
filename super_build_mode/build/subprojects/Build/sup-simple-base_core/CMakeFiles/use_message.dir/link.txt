@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/use_message.dir/use_message.cpp.o  -o execute/use_message  -Wl,-rpath,/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/stage/lib /home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/stage/lib/libmessage_d.so.1 /usr/lib/x86_64-linux-gnu/libuuid.so 

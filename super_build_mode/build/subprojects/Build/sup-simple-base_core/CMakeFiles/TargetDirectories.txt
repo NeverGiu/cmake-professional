@@ -1,3 +1,0 @@
-/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Build/sup-simple-base_core/CMakeFiles/rebuild_cache.dir
-/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Build/sup-simple-base_core/CMakeFiles/edit_cache.dir
-/home/nevergiu/Program/source/repos/nglive_box/cmake_professional/super_build_mode/build/subprojects/Build/sup-simple-base_core/CMakeFiles/use_message.dir
