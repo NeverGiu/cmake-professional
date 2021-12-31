@@ -15,9 +15,9 @@ check_required_components(
 
 # Step 4: Check if 'PkgConfig::UUID' is exist. If not exist, 
 # we will research UUID library(only valid under non-WIN system).
-if(NOT WIN32)
-	if(NOT TARGET PkgConfig::UUID)
-		find_package(PkgConfig REQUIRED QUIET)
-		pkg_search_module(UUID REQUIRED uuid IMPORTED_TARGET)
-	endif()
-endif()
+# if(NOT WIN32)
+#         if(NOT TARGET PkgConfig::UUID)
+#                 find_package(PkgConfig REQUIRED QUIET)
+#                 pkg_search_module(UUID REQUIRED uuid IMPORTED_TARGET)
+#         endif()
+# endif()

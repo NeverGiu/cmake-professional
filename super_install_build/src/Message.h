@@ -24,5 +24,5 @@ namespace Lib
 		std::ostream& printObject(std::ostream& os);
 	};
 
-	std::string getUUID();
+	// std::string getUUID();
 }

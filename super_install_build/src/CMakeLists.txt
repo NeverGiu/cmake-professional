@@ -5,14 +5,14 @@
 # Import package
 # --------------
 # Step 1: The project is depends on UUID.
-find_package(PkgConfig QUIET)
-if(PKG_CONFIG_FOUND)
-	pkg_search_module(UUID uuid IMPORTED_TARGET)
-	if(TARGET PkgConfig::UUID)
-		message(STATUS "Found library uuid")
-		set(UUID_FOUND TRUE)
-	endif()
-endif()
+# find_package(PkgConfig QUIET)
+# if(PKG_CONFIG_FOUND)
+#         pkg_search_module(UUID uuid IMPORTED_TARGET)
+#         if(TARGET PkgConfig::UUID)
+#                 message(STATUS "Found library uuid")
+#                 set(UUID_FOUND TRUE)
+#         endif()
+# endif()
 
 # Dynamic library
 # ---------------
@@ -40,12 +40,12 @@ target_sources(message-shared
 
 # Step 4: Declare linked library when compiling. Note: all these items 
 # are PUBLIC to make sure all targets depends on them can inherit correctly.
-target_compile_definitions(message-shared
-	PUBLIC
-		$<$<BOOL:${UUID_FOUND}>:HAVE_UUID>
-	INTERFACE
-		$<INSTALL_INTERFACE:USING_message>
-	)
+# target_compile_definitions(message-shared
+#         PUBLIC
+#                 $<$<BOOL:${UUID_FOUND}>:HAVE_UUID>
+#         INTERFACE
+#                 $<INSTALL_INTERFACE:USING_message>
+#         )
 
 # Step 5: When we will change visibility of symbols, we should include the header 
 # that has been exported.
@@ -55,10 +55,10 @@ target_include_directories(message-shared
 		$<INSTALL_INTERFACE:${INSTALL_INCLUDEDIR}>
 	)
 
-target_link_libraries(message-shared
-	PUBLIC
-		$<$<BOOL:${UUID_FOUND}>:PkgConfig::UUID>
-	)
+# target_link_libraries(message-shared
+#         PUBLIC
+#                 $<$<BOOL:${UUID_FOUND}>:PkgConfig::UUID>
+#         )
 
 # Step 6: Set additional attributes of the target.
 set_target_properties(message-shared
@@ -85,13 +85,13 @@ target_sources(message-static
 
 # Step 8: Because we add 'message_STATIC_DEFINE' compiling macro defination, 
 # so make sure our symbols can been exposed suitable.
-target_compile_definitions(message-static
-	PUBLIC
-		message_STATIC_DEFINE
-		$<$<BOOL:${UUID_FOUND}>:HAVE_UUID>
-	INTERFACE
-		$<INSTALL_INTERFACE:USING_message>
-	)
+# target_compile_definitions(message-static
+#         PUBLIC
+#                 message_STATIC_DEFINE
+#                 $<$<BOOL:${UUID_FOUND}>:HAVE_UUID>
+#         INTERFACE
+#                 $<INSTALL_INTERFACE:USING_message>
+#         )
 
 target_include_directories(message-static
 	PUBLIC
@@ -99,10 +99,10 @@ target_include_directories(message-static
 		$<INSTALL_INTERFACE:${INSTALL_INCLUDEDIR}>
 	)
 
-target_link_libraries(message-static
-	PUBLIC 
-		$<$<BOOL:${UUID_FOUND}>:PkgConfig::UUID>
-	)
+# target_link_libraries(message-static
+#         PUBLIC
+#                 $<$<BOOL:${UUID_FOUND}>:PkgConfig::UUID>
+#         )
 
 # Step 9: Config 'message-static' target's attributes.
 set_target_properties(message-static

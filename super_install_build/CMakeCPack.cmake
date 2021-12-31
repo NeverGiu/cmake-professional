@@ -14,8 +14,8 @@ set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "message: This is a small messaging librar
 set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/LICENSE")
 
 # Step 6: Sets local install directory
-set(CPACK_PACKAGING_INSTALL_PREFIX "/home/nevergiu/TestApp/${PROJECT_NAME}")
-message(STATUS "(Install Message): Your project will install at '/home/nevergiu/TestApp/${PROJECT_NAME}' when you run the binary-install-file")
+set(CPACK_PACKAGING_INSTALL_PREFIX "/home/nevergiu/TestApp/msgbus")
+message(STATUS "(Install Message): Your project will install at '/home/nevergiu/TestApp/msgbus' when you run the binary-install-file")
 
 # Step 7: Sets package version that CPack needed(major.minor.patch)
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
@@ -37,12 +37,12 @@ if(UNIX)
 		list(APPEND CPACK_GENERATOR "DEB")
 		set(CPACK_DEBIAN_PACKAGE_MAINTAINER "nevergiu")
 		set(CPACK_DEBIAN_PACKAGE_SECTION "devel")
-		set(CPACK_DEBIAN_PACKAGE_DEPENDS "uuid-dev")
+		# set(CPACK_DEBIAN_PACKAGE_DEPENDS "uuid-dev")
 
 		list(APPEND CPACK_GENERATOR "RPM")
 		set(CPACK_RPM_PACKAGE_RELEASE "1")
 		set(CPACK_RPM_PACKAGE_LICENSE "GNU")
-		set(CPACK_RPM_PACKAGE_REQUIRES "uuid-devel")
+		# set(CPACK_RPM_PACKAGE_REQUIRES "uuid-devel")
 	endif()
 endif()
 
